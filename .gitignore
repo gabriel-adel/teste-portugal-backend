@@ -1,0 +1,12 @@
+node_modules
+.serverless
+src/blog/node_modules
+src/event/node_modules
+src/gallery/node_modules
+src/team/node_modules
+
+src/blog/sql.sql
+src/event/sql.sql
+src/gallery/sql.sql
+src/team/sql.sql
+

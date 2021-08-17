@@ -1,0 +1,44 @@
+org: adelar
+app: new-new-backend
+service: new-backend
+
+frameworkVersion: '2'
+
+plugins:
+  - serverless-offline
+  - serverless-dotenv-plugin
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  lambdaHashingVersion: '20201221'
+
+
+
+
+functions:
+  blog:
+    handler: ./src/blog/index.run
+    events:
+      - http:
+          path: /blog/{proxy+}
+          method: ANY
+  team:
+    handler: ./src/team/index.run
+    events:
+      - http:
+          path: /team/{proxy+}
+          method: ANY
+  event:
+    handler: ./src/event/index.run
+    events:
+      - http:
+          path: /event/{proxy+}
+          method: ANY
+  gallery:
+    handler: ./src/gallery/index.run
+    events:
+      - http:
+          path: /gallery/{proxy+}
+          method: ANY
+  

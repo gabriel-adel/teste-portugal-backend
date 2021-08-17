@@ -1,0 +1,11 @@
+{
+  "name": "mew-backend",
+  "version": "1.0.0",
+  "description": "",
+  "dependencies": {
+    "express": "^4.17.1",
+    "serverless-dotenv-plugin": "^3.9.0",
+    "serverless-http": "^2.7.0",
+    "serverless-offline": "^8.0.0"
+  }
+}
